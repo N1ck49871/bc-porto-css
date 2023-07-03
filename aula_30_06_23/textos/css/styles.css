@@ -1,0 +1,28 @@
+.container h1,
+.container h2,
+.container h3 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  color: blueviolet;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container h2 {
+  font-size: 2rem;
+}
+.container h3 {
+  font-size: 1.5rem;
+}
+.container p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+html{
+  font-size: 12px;
+}
+/* 
+rem = medida relativa ao elemento HTML
+*/
