@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --cor-primaria: #0d0d21;
+  --cor-secundaria: #343466;
+  --terceira-cor: #aaaae6;
+  --quarta-cor: #f0f0f5;
+  --quinta-cor: #9595cc;
+  --sexta-cor: #ccc;
+}
+.container-1 {
+  background-color: var(--cor-primaria);
+  /* padding: 12px; */
+  display: flex; /* Ativa o Flexbox*/
+  /* row, column = direção que os elementos sao distribuidos*/
+  flex-direction: row;
+  /* nowrap, wrap = indica se pode quebrar linha se nao houver espaço */
+  flex-wrap: wrap;
+  /* flex-flow: column wrap; atalho para flex-direction e flex-wrap*/
+  /* start, end, center, space-between */
+  justify-content: space-around; /* ajusta os elementos no eixo main*/
+  /* stretch flex-start, flex-end, center*/
+  align-items: center;
+  /* space-between, space-around, center, flex-start, flex-end */
+  align-content: space-around;
+  height: 600px;
+}
+.item-1 {
+  background-color: var(--cor-secundaria);
+  color: #fff;
+}
+.item-2 {
+  background-color: var(--terceira-cor);
+}
+.item-3 {
+  background-color: var(--quarta-cor);
+  /* mesmos valores do align-items */
+  align-self: flex-end; /*alinha no eixo cross individualmente*/
+}
+.item-4 {
+  background-color: var(--quinta-cor);
+}
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+ width: 200px;
+ padding: 8px;
+}
+.container-2{
+background-color: var(--quinta-cor);
+height: 200px;
+display: flex;
+
+}
+.coluna-1{
+  background-color: var(--cor-secundaria);
+}
+.coluna-2{
+  background-color: var(--sexta-cor);
+  flex: 1; /* ocupa uma porção do espaço disponível */
+}
+.coluna-3{
+  background-color: var(--terceira-cor);
+  /* 1/2 */
+  flex: 1;
+}
